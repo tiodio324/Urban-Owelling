@@ -33,6 +33,14 @@ body {
   color: #FFFFFD;
   text-decoration: none;
 }
+.bar-info_box .bar-info_links_container .changeLangContainer {
+  border: none;
+  background-color: #0C0C0C;
+  color: #FFFFFD;
+}
+.bar-info_box .bar-info_links_container .changeLangContainer:focus {
+  outline: 1px solid #E2762E;
+}
 
 .header_box {
   background-color: #FFFFFD;
@@ -85,7 +93,7 @@ body {
   border-radius: 30px;
   outline: none;
 }
-.header_box .header_container .header_features .header_features_search_form .header_features_search_input:hover, .header_box .header_container .header_features .header_features_search_form .header_features_search_input:active {
+.header_box .header_container .header_features .header_features_search_form .header_features_search_input:hover, .header_box .header_container .header_features .header_features_search_form .header_features_search_input:active, .header_box .header_container .header_features .header_features_search_form .header_features_search_input:focus {
   border: none;
   outline: 1px solid #E45302;
 }
@@ -193,6 +201,14 @@ body {
   text-decoration: underline;
   text-decoration-color: #E45302;
 }
+.header_box_mobile .header_container_mobile .bar-info_links_container_mobile .changeLangContainer {
+  border: none;
+  background-color: #0C0C0C;
+  color: #FFFFFD;
+}
+.header_box_mobile .header_container_mobile .bar-info_links_container_mobile .changeLangContainer:focus {
+  outline: 1px solid #E2762E;
+}
 .header_box_mobile .header_container_mobile .header_menu_mobile {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -224,7 +240,7 @@ body {
   border-radius: 30px;
   outline: none;
 }
-.header_box_mobile .header_container_mobile .header_features_mobile .header_features_search_form_mobile .header_features_search_input_mobile:hover, .header_box_mobile .header_container_mobile .header_features_mobile .header_features_search_form_mobile .header_features_search_input_mobile:active {
+.header_box_mobile .header_container_mobile .header_features_mobile .header_features_search_form_mobile .header_features_search_input_mobile:hover, .header_box_mobile .header_container_mobile .header_features_mobile .header_features_search_form_mobile .header_features_search_input_mobile:active, .header_box_mobile .header_container_mobile .header_features_mobile .header_features_search_form_mobile .header_features_search_input_mobile:focus {
   border: none;
   outline: 1px solid #E45302;
 }

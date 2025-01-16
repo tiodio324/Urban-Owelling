@@ -39,6 +39,16 @@ body {
             color: $white;
             text-decoration: none;
         }
+
+        .changeLangContainer {
+            border: none;
+            background-color: $black;
+            color: $white;
+
+            &:focus {
+                outline: 1px solid #E2762E;
+            }
+        }
     }
 }
 
@@ -102,7 +112,7 @@ body {
                     border-radius: 30px;
                     outline: none;
 
-                    &:hover, &:active {
+                    &:hover, &:active, &:focus {
                         border: none;
                         outline: 1px solid #E45302;
                     }
@@ -228,6 +238,16 @@ body {
                     text-decoration-color: #E45302;
                 }
             }
+
+            .changeLangContainer {
+                border: none;
+                background-color: $black;
+                color: $white;
+
+                &:focus {
+                    outline: 1px solid #E2762E;
+                }
+            }
         }
 
         .header_menu_mobile {
@@ -266,7 +286,7 @@ body {
                     border-radius: 30px;
                     outline: none;
 
-                    &:hover, &:active {
+                    &:hover, &:active, &:focus {
                         border: none;
                         outline: 1px solid #E45302;
                     }
