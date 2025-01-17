@@ -1,49 +1,191 @@
 $orange: #E45302;
 
 
+@font-face {
+    font-family: Lato500;
+    src: url("../fonts/Lato-Medium.ttf");
+}
+
+
+
 .bar-info_container, .header_container, .main_container, .footer_container, .footer_container_mobile {
-    @media (min-width: 1920px) {
+    @media (min-width: 1600px) {
         margin-left: auto;
         margin-right: auto;
         max-width: 1400px;
 
-        .main_card_product {
-            width: 310px;
+        .header_logo_container {
+            width: 217px;
+            height: 56px;
+        }
+
+        .main_card {
+            .main_card_product {
+                width: 320px;
+                height: 477px;
+            }
+
+            h4 {
+                max-width: 320px;
+            }
+        }
+
+        .main_cards_container {
+            gap: 40px;
+        }
+
+        .footer_logo_container {
+            width: 239px;
+            height: 62px;
         }
     }
 
 
-    @media (min-width: 1600px ) and (max-width: 1920px) {
+    @media (min-width: 1280px) and (max-width: 1600px) {
         margin-left: auto;
         margin-right: auto;
         max-width: 1240px;
 
-        .main_card_product {
-            width: 265px;
+        .header_logo_container {
+            width: 217px;
+            height: 56px;
+        }
+
+        .main_card {
+            .main_card_product {
+                width: 287px;
+                height: 429px;
+            }
+
+            h4 {
+                max-width: 289px;
+            }
+        }
+
+        .main_cards_container {
+            gap: 30px;
+        }
+
+        .footer_logo_container {
+            width: 217px;
+            height: 56px;
         }
     }
 
 
-    @media (min-width: 770px ) and (max-width: 1600px) {
+    @media (min-width: 770px) and (max-width: 1280px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
+
+        .header_logo_container {
+            width: 217px;
+            height: 56px;
+        }
+
+        .header_menu {
+            gap: 35px;
+        }
+
+        .header_features_search_input {
+            max-width: 80px;
+        }
+
+        .main_card {
+            .main_card_product {
+                width: 210px;
+                height: 370px;
+            }
+
+            h4 {
+                max-width: 210px;
+            }
+        }
+
+        .main_cards_container {
+            gap: 25px;
+        }
+
+        .footer_logo_container {
+            width: 217px;
+            height: 56px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .header_menu {
+            gap: 100px;
+        }
+    }
+
+
+    @media (min-width: 700px) and (max-width: 770px) {
         margin-left: auto;
         margin-right: auto;
         max-width: 680px;
 
-        .main_card_product {
-            width: 310px;
+        .header_logo_container {
+            width: 141px;
+            height: 36px;
+        }
+
+        .main_card {
+            .main_card_product {
+                width: 320px;
+                height: 477px;
+            }
+
+            h4 {
+                max-width: 320px;
+            }
+        }
+
+        .main_cards_container {
+            gap: 40px;
+        }
+
+        .footer_logo_container {
+            width: 180px;
+            height: 46px;
+        }
+    }
+
+    @media (min-width: 390px) and (max-width: 700px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 480px;
+
+        .header_logo_container {
+            width: 141px;
+            height: 36px;
+        }
+
+        .main_card {
+            .main_card_product {
+                width: 220px;
+                height: 310px;
+            }
+
+            h4 {
+                max-width: 220px;
+            }
+        }
+
+        .main_cards_container {
+            gap: 30px;
+        }
+
+        .footer_logo_container {
+            width: 180px;
+            height: 46px;
         }
     }
 
 
-    @media (min-width: 770px) {
+    @media (min-width: 390px) {
         .main_cards_container {
-            row-gap: 40px;
-            column-gap: 50px;
-
             .main_card {
                 .main_card_product {
-                    height: 477px;
-
                     .main_card_product_discount {
                         padding: 8px 40px;
                     }
@@ -69,17 +211,28 @@ $orange: #E45302;
     }
 
 
-    @media (max-width: 770px) {
+    @media (max-width: 390px) {
         margin-left: auto;
         margin-right: auto;
         max-width: 320px;
 
+        .header_logo_container {
+            width: 141px;
+            height: 36px;
+        }
+
+        .header_menu_mobile {
+            a {
+                font-family: Lato500;
+            }
+        }
+
         .main_cards_container {
-            row-gap: 10px;
-            column-gap: 30px;
+            gap: 10px;
 
             .main_card {
                 .main_card_product {
+                    width: 155px;
                     height: 230px;
 
                     .main_card_product_discount {
@@ -95,8 +248,9 @@ $orange: #E45302;
                 }
 
                 h4 {
-                    max-width: 145px;
+                    max-width: 155px;
                     font-size: 16px;
+                    font-family: Lato500;
                     margin: 10px 0 11px 0;
                 }
 
@@ -107,8 +261,9 @@ $orange: #E45302;
             }
         }
 
-        .main_card_product {
-            width: 145px;
+        .footer_logo_container {
+            width: 180px;
+            height: 46px;
         }
     }
 }
@@ -116,23 +271,26 @@ $orange: #E45302;
 
 .main_container {
     h1 {
-        @media (min-width: 1920px) {
+        @media (min-width: 1600px) {
             font-size: 44px;
         }
-        @media (min-width: 1600px) and (max-width: 1920px) {
+        @media (min-width: 770px) and (max-width: 1600px) {
             font-size: 40px;
         }
-        @media (min-width: 770px) and (max-width: 1600px) {
+        @media (min-width: 700px) and (max-width: 770px) {
             font-size: 32px;
         }
-        @media (max-width: 770px) {
+        @media (min-width: 390px) and (max-width: 700px) {
+            font-size: 28px;
+        }
+        @media (max-width: 390px) {
             font-size: 24px;
         }
     }
 }
 
 
-@media (min-width: 1600px) {
+@media (min-width: 770px) {
     .header_menu, .header_features {
         display: flex;
     }
@@ -267,7 +425,7 @@ $orange: #E45302;
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 770px) {
     .header_menu, .header_features, .footer_container {
         display: none;
     }
@@ -278,15 +436,21 @@ $orange: #E45302;
 }
 
 
-@media (min-width: 770px) and (max-width: 1600px) {
+@media (min-width: 700px) and (max-width: 770px) {
     .bar-info_box {
         display: none;
+    }
+
+    .header_box_mobile {
+        &.header_box_mobile_BtnOpenMenu {
+            min-width: 40%;
+        }
     }
 
     .footer_container_mobile {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: auto;
         gap: 40px;
         padding: 50px 0;
 
@@ -435,7 +599,7 @@ $orange: #E45302;
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 700px) {
     .bar-info_box {
         display: none;
     }
@@ -582,7 +746,7 @@ $orange: #E45302;
         .header_features_mobile {
             .header_features_search_input_mobile {
                 padding: 8px 0 8px 16px;
-                font-size: 12px;
+                font-size: 10px;
             }
             .header_features_basket_container_mobile {
                 padding-left: 8px;
@@ -597,7 +761,7 @@ $orange: #E45302;
     }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 700px) {
     .footer_column_mobile_confCopy {
         display: none;
     }
@@ -608,8 +772,8 @@ $orange: #E45302;
     .header_container_mobile {
         .header_features_mobile {
             .header_features_search_input_mobile {
-                padding: 4px 0 4px 8px;
-                font-size: 16px;
+                padding: 8px 0 8px 16px;
+                font-size: 14px;
             }
 
             .header_features_basket_container_mobile {
@@ -626,8 +790,28 @@ $orange: #E45302;
     }
 }
 
-@media (max-width: 480px) {
-    .header_features_search_input_mobile {
-        display: none;
+@media (max-width: 390px) {
+    .bar-info_links_container_mobile {
+        li {
+            font-size: 10px;
+
+            select {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .header_box_mobile {
+        &.header_box_mobile_BtnOpenMenu {
+            min-width: 70%;
+        }
+    }
+
+    .header_container_mobile {
+        .header_menu_mobile {
+            a {
+                font-size: 10px;
+            }
+        }
     }
 }

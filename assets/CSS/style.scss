@@ -1,7 +1,16 @@
 @font-face {
-    font-family: Lato-Regular;
+    font-family: Lato400;
     src: url("../fonts/Lato-Regular.ttf");
-
+}
+@font-face {
+    font-family: Lato600;
+    src: url("../fonts/Lato-Semibold.ttf");
+}
+@font-face {
+    font-family: Lato700;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+@font-face {
     font-family: Korataki-Regular;
     src: url("../fonts/korataki-regular.otf");
 }
@@ -12,7 +21,7 @@ $orange: #E45302;
 
 body {
     margin: 0;
-    font-family: Lato-Regular;
+    font-family: Lato400;
 }
 
 .noscript_container {
@@ -63,8 +72,18 @@ body {
         justify-content: space-between;
         align-items: center;
 
-        .header_logo_container a {
-            text-decoration: none;
+        .header_logo_container {
+            background-image: url("../img/logoWhite.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            button {
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
         }
 
         .header_openMenu_container {
@@ -80,12 +99,11 @@ body {
             margin: 0;
             flex-direction: row;
             align-items: center;
-            gap: 100px;
             list-style-type: none;
 
             a {
                 color: $black;
-                font-weight: 600;
+                font-family: Lato600;
                 text-decoration: none;
 
                 &:hover, &:active {
@@ -239,6 +257,10 @@ body {
                 }
             }
 
+            select {
+                font-family: Lato400;
+            }
+
             .changeLangContainer {
                 border: none;
                 background-color: $black;
@@ -261,7 +283,7 @@ body {
 
             a {
                 color: $white;
-                font-weight: 600;
+                font-family: Lato600;
                 text-decoration: none;
 
                 &:hover, &:active {
@@ -374,6 +396,10 @@ main {
             flex-wrap: wrap;
             margin-bottom: 60px;
 
+            &:nth-last-child(1) {
+                justify-content: center;
+            }
+
             .main_card {
                 &:nth-child(1) .main_card_product {
                     background-image: url("../img/products/product_001.png");
@@ -449,7 +475,11 @@ main {
                     flex-direction: row;
                     justify-content: left;
                     align-items: center;
-                    font-weight: 700;
+                    font-family: Lato700;
+
+                    p {
+                        margin: 0;
+                    }
 
                     .main_card_price_discountNew {
                         color: $orange;
@@ -457,7 +487,7 @@ main {
 
                     .main_card_price_discountOld {
                         color: #808080;
-                        font-weight: 600;
+                        font-family: Lato600;
                         text-decoration: line-through;
                     }
                 }
@@ -468,4 +498,18 @@ main {
 
 footer {
     background-color: #0C0C0C;
+
+    .footer_logo_container {
+        background-image: url("../img/logoBlack.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        button {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
 }
